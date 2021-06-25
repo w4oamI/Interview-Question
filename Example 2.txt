@@ -2,3 +2,6 @@ second
 인터뷰 추가
 
 코딩테스트 시험 및 리뷰
+
+파이썬 문법 자세한 공부
+list split이 되고 문자열은 split이 안되기 때문에 join().split사용
