@@ -5,3 +5,10 @@ second
 
 파이썬 문법 자세한 공부
 list split이 되고 문자열은 split이 안되기 때문에 join().split사용
+
+isdigit() -> 숫자판단
+isalpha() -> 문자 판단
+
+isdigit()과 isnumeric()은 둘다 숫자판단 함수이다.
+둘의 차이는 분수 특수문자를 인식하는지에 대한 차이이다.
+isdigit()은 분수(특수문자로 된 분수)를 인식하지 못하지만 isnumeric()은 숫자로 인식한다.
