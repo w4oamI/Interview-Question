@@ -1,0 +1,37 @@
+😜&nbsp : html내에서 공백을 나타내는 특수 기호이다. 공백을 스페이스로 하게 되면 공백크기가 일정하지 않다.
+   CODE          RESULT
+)H   ELLOW   -> H  ELLOW
+ H&nbsp&nbspELLOW -> H   ELLOW
+
+😜Maven : 사용할 라이브러리 뿐만 아니라 해당 라이브러리가 작동하는데 필요한 다른 라이브러리 까지 관리 하여, 네크워크를 통해 자동으로 다운 받는다.
+        필요한 라이브러리를 pom.xml에 정의 해놓으면 사용이 가능하다.
+        -> 프로젝트의 전체적인 LifeCycle를 관리하는 도구
+
+
+😜CISC 와 RISC의 차이
+
+😜쿼리실행 순서 : FROM -> WHERE -> GROUP BY -> HAVING -> SELECT -> ORDER BY
+😜WHERE과 HAVING
+  -WHERE은 개별 행에 적용되어, 행을 필터링 하는데 사용한다.
+  -HAVING은 그룹과 집합에 사용되어, 집합이나 그룹을 필터링 하는데 사용한다.
+
+😜Oracle 에서 NVL함수 사용법: NVL("값","지정값")  //값이 NULL일 경우. 지정값을 출력한다.
+😜SQL에서 Alias를 주게 되었을때는 해당 alias를 항상 붙여줘야한다.
+   -> A라는 TABLE과 B라는 TABLE이 존재하고 각각 ID라는 colum이 존재할때, A라는 테이블에서 찾아야하는데 B라는 테이블에서 찾을 수 있기 때문이다.
+😜Outer Join
+   (+)기호의 위치 반대쪽 테이블이 outer join의 기준이 되는 테이블이다.
+   where A.ID = B.ID(+)   -> A테이블이 기준이 되는 테이블이다. A테이블은 모든 데이터가 출력되고, B테이블은 A테이블의 조건을 만족해야 출력되며, 나머지는 NULL이다.
+😜DISTINCT는 중복제거를 위한 키워드이다.
+  -> 주의할점은 ORDER BY랑 같이 사용하게 되면 ORDER BY에서 사용한 컬럼이 SELECT에도 존재해야 한다.
+
+😜DECODE는 if else기능을 하는 함수이다.
+  -> DECODE(컬럼,조건1,결과,조건2,결과)
+  
+😜ibatis
+  동적 바인딩(#) : 쿼리가 수행될때, colume=? -> 재사용 가능
+  정적 바인딩($) : 쿼리가 수행될때, colume=값 -> 재사용 불가능
+  
+😜위치에 따른 서브 쿼리
+   - SELECT 절에 위치 : 스칼라 서브쿼리
+   - FROM 절에 위치 : 인라인 뷰
+   - WHERE 절에 위치 : 서브쿼리
